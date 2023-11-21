@@ -1,0 +1,43 @@
+http://localhost:8082/api/v1/mileage/getForEmployee/1
+
+http://localhost:8082/login
+
+{
+    "login": "test",
+    "password": "test"
+}
+
+
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzAwNDkxMjM3LCJleHAiOjE3MDA0OTQ4Mzd9.gH1fLSnQXYV47OSfIS0Seydl_2xJGrbXiZ9z-4Bpeuk
+
+
+http://localhost:8082/api/v1/employee/loadEmployees
+
+{
+    "filePath": "C:\\java\\pet projects\\emissions\\emissions\\src\\main\\resources\\employeeServiceTest.csv"
+}
+
+http://localhost:8082/api/v1/vehicle/loadVehicles
+
+{
+    "filePath": "C:\\java\\pet projects\\emissions\\emissions\\src\\main\\resources\\vehicleServiceTest.csv"
+}
+
+
+
+http://localhost:8082/api/v1/company/create
+{
+    "name": "TestCompany"
+}
+
+
+http://localhost:8082/api/v1/mileage/loadMileage
+
+{
+    "filePath": "C:\\java\\pet projects\\emissions\\emissions\\src\\main\\resources\\mileageServiceTest.csv"
+}
+
+http://localhost:8082/api/v1/mileage/getForEmployee/5
+
+http://localhost:8082/api/v1/mileage/getForCompany
