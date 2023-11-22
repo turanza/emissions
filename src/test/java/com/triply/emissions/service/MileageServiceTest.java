@@ -2,6 +2,7 @@ package com.triply.emissions.service;
 
 import com.triply.emissions.command.vehicle.mileage.LoadMileageCommand;
 import com.triply.emissions.repository.MileageRepository;
+import com.triply.emissions.repository.VehicleRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -16,9 +17,12 @@ class MileageServiceTest {
     public MileageService mileageService;
     private MileageRepository mileageRepository;
 
+    private VehicleRepository vehicleRepository;
+
     @BeforeEach
     public void setup(){
         mileageRepository = Mockito.mock(MileageRepository.class);
+        vehicleRepository = Mockito.mock(VehicleRepository.class);
         mileageService = new MileageService(mileageRepository, vehicleRepository);
     }
 
