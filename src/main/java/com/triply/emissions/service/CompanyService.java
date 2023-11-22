@@ -17,6 +17,6 @@ public class CompanyService {
     @Transactional
     public void createNewCompany(CreateCompanyCommand command) {
         companyRepository.save(new Company(command.getName()));
-        companyRepository.setCurrentCompany();
+        companyRepository.setCurrentCompany(companyRepository.getLastOne());
     }
 }
